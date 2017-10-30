@@ -1,26 +1,87 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WPtest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="207" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pg6-uw-9Qw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="207" id="f9u-GT-2bM" customClass="CustomTableViewCell" customModule="WPtest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="207"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f9u-GT-2bM" id="dfe-GQ-IRQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="206.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yP4-aR-CO9">
+                                                    <rect key="frame" x="8" y="8" width="304" height="190.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITULO DE LA PUBLICACION EN BLANCO Y GRANDOTE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-OG-T8g">
+                                                    <rect key="frame" x="38.5" y="27" width="243" height="152.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Owv-OG-T8g" firstAttribute="width" secondItem="yP4-aR-CO9" secondAttribute="width" multiplier="0.8" id="0cA-L2-sXU"/>
+                                                <constraint firstItem="Owv-OG-T8g" firstAttribute="height" secondItem="yP4-aR-CO9" secondAttribute="height" multiplier="0.8" id="6Bp-N2-dn6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yP4-aR-CO9" secondAttribute="trailing" id="7mQ-vz-4Ym"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yP4-aR-CO9" secondAttribute="bottom" id="Duy-SL-TeY"/>
+                                                <constraint firstItem="Owv-OG-T8g" firstAttribute="centerX" secondItem="dfe-GQ-IRQ" secondAttribute="centerX" id="I0e-9g-3Oh"/>
+                                                <constraint firstItem="yP4-aR-CO9" firstAttribute="leading" secondItem="dfe-GQ-IRQ" secondAttribute="leadingMargin" id="NWZ-wK-cRS"/>
+                                                <constraint firstItem="Owv-OG-T8g" firstAttribute="centerY" secondItem="dfe-GQ-IRQ" secondAttribute="centerY" id="UlW-2A-n3W"/>
+                                                <constraint firstItem="yP4-aR-CO9" firstAttribute="top" secondItem="dfe-GQ-IRQ" secondAttribute="topMargin" id="XTl-Ka-PDh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imagePost" destination="yP4-aR-CO9" id="0Qn-ie-53X"/>
+                                            <outlet property="imageTitle" destination="Owv-OG-T8g" id="UwX-qr-icN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="G2v-ui-kXl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vKA-A8-Xj8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pg6-uw-9Qw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C7M-Wd-lBA"/>
+                            <constraint firstItem="Pg6-uw-9Qw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SLl-mZ-GZi"/>
+                            <constraint firstAttribute="trailing" secondItem="Pg6-uw-9Qw" secondAttribute="trailing" id="X3l-cl-ZKn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pg6-uw-9Qw" secondAttribute="bottom" id="gmx-6D-GmU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="Pg6-uw-9Qw" id="7x1-Ix-NfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.625" y="138.38028169014083"/>
         </scene>
     </scenes>
 </document>

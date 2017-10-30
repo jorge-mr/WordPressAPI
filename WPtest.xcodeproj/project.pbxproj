@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9366573B1FA794B000B830DA /* Pods_WPtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9366573C1FA794B000B830DA /* Pods_WPtest.framework */; };
+		9397A8721F6730800089DFA9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397A8711F6730800089DFA9 /* CustomTableViewCell.swift */; };
 		93A1A6401F5DFD1000AC16A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1A63F1F5DFD1000AC16A3 /* AppDelegate.swift */; };
 		93A1A6421F5DFD1000AC16A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1A6411F5DFD1000AC16A3 /* ViewController.swift */; };
 		93A1A6451F5DFD1000AC16A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A1A6431F5DFD1000AC16A3 /* Main.storyboard */; };
 		93A1A6471F5DFD1000AC16A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A1A6461F5DFD1000AC16A3 /* Assets.xcassets */; };
 		93A1A64A1F5DFD1000AC16A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A1A6481F5DFD1000AC16A3 /* LaunchScreen.storyboard */; };
+		93F297751F6A3E0E00848299 /* WPPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F297741F6A3E0E00848299 /* WPPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283CEABF1D104DA93C2E4111 /* Pods-WPtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPtest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPtest/Pods-WPtest.release.xcconfig"; sourceTree = "<group>"; };
+		6232B41DDCA1E60BABB5481F /* Pods_WPtest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WPtest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9B185489FEB9F570712241 /* Pods-WPtest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPtest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WPtest/Pods-WPtest.debug.xcconfig"; sourceTree = "<group>"; };
+		9366573C1FA794B000B830DA /* Pods_WPtest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WPtest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9397A8711F6730800089DFA9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		93A1A63C1F5DFD1000AC16A3 /* WPtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A1A63F1F5DFD1000AC16A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A1A6411F5DFD1000AC16A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,7 @@
 		93A1A6461F5DFD1000AC16A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93A1A6491F5DFD1000AC16A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93A1A64B1F5DFD1000AC16A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F297741F6A3E0E00848299 /* WPPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9366573B1FA794B000B830DA /* Pods_WPtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65199379648A6CEAAC4145B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E9B185489FEB9F570712241 /* Pods-WPtest.debug.xcconfig */,
+				283CEABF1D104DA93C2E4111 /* Pods-WPtest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		93A1A6331F5DFD1000AC16A3 = {
 			isa = PBXGroup;
 			children = (
 				93A1A63E1F5DFD1000AC16A3 /* WPtest */,
 				93A1A63D1F5DFD1000AC16A3 /* Products */,
+				65199379648A6CEAAC4145B2 /* Pods */,
+				D9009EBABA479F4276977936 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +81,19 @@
 				93A1A6461F5DFD1000AC16A3 /* Assets.xcassets */,
 				93A1A6481F5DFD1000AC16A3 /* LaunchScreen.storyboard */,
 				93A1A64B1F5DFD1000AC16A3 /* Info.plist */,
+				9397A8711F6730800089DFA9 /* CustomTableViewCell.swift */,
+				93F297741F6A3E0E00848299 /* WPPost.swift */,
 			);
 			path = WPtest;
+			sourceTree = "<group>";
+		};
+		D9009EBABA479F4276977936 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9366573C1FA794B000B830DA /* Pods_WPtest.framework */,
+				6232B41DDCA1E60BABB5481F /* Pods_WPtest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93A1A64E1F5DFD1000AC16A3 /* Build configuration list for PBXNativeTarget "WPtest" */;
 			buildPhases = (
+				8B9018B4A80E4D79135F1823 /* [CP] Check Pods Manifest.lock */,
 				93A1A6381F5DFD1000AC16A3 /* Sources */,
 				93A1A6391F5DFD1000AC16A3 /* Frameworks */,
 				93A1A63A1F5DFD1000AC16A3 /* Resources */,
+				55C22C30E6054ED44D10592F /* [CP] Embed Pods Frameworks */,
+				7BC653858DFF57B4B4BF0166 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +167,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55C22C30E6054ED44D10592F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WPtest/Pods-WPtest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPtest/Pods-WPtest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BC653858DFF57B4B4BF0166 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPtest/Pods-WPtest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B9018B4A80E4D79135F1823 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WPtest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93A1A6381F5DFD1000AC16A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F297751F6A3E0E00848299 /* WPPost.swift in Sources */,
+				9397A8721F6730800089DFA9 /* CustomTableViewCell.swift in Sources */,
 				93A1A6421F5DFD1000AC16A3 /* ViewController.swift in Sources */,
 				93A1A6401F5DFD1000AC16A3 /* AppDelegate.swift in Sources */,
 			);
@@ -261,6 +356,7 @@
 		};
 		93A1A64F1F5DFD1000AC16A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9B185489FEB9F570712241 /* Pods-WPtest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9445LG25J4;
@@ -274,6 +370,7 @@
 		};
 		93A1A6501F5DFD1000AC16A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 283CEABF1D104DA93C2E4111 /* Pods-WPtest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9445LG25J4;
@@ -304,6 +401,7 @@
 				93A1A6501F5DFD1000AC16A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
